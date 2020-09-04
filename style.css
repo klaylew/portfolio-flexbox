@@ -1,0 +1,142 @@
+/* General */  
+
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Rajdhani&display=swap');
+
+body {
+background-color: #e2e2e2;
+}
+
+h2{
+  margin: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(83, 83, 83);
+}
+
+h3{
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(83, 83, 83);
+}
+
+p, ul, ol{
+  margin: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.wrapper {  /* wrapper class for centering contents with margins */
+  width: 100%;
+  margin: auto;
+}
+
+
+img{ /* rounded corners on images */
+  display: block;
+  border-radius: 5px;
+
+}
+
+.text-center{ /* centered text class for image centering */
+  text-align:center;
+}
+
+hr{ /* horizontal rule constraints */
+  margin: 40px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width{
+    width: 100%;
+}
+
+/* header */
+
+
+header h1{ 
+  font-family: 'Give You Glory', cursive;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-shadow: 8px 8px 5px rgb(0, 0, 0);
+  color:   rgb(187, 170, 155);
+  text-align: center;
+  margin: 0;
+}
+
+header h3{ /* page sub-header */
+  font-family: 'Rajdhani', sans-serif;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  color:   rgb(187, 170, 155);
+  text-align: center;
+}
+
+header{ /* background color for header container */
+  background-color: rgb(68, 25, 0);
+  padding: 35px 0;
+  margin: 0 0 20px 0;
+}
+
+
+
+
+
+
+/* Text link rollover pseudo-class */
+a:link    { color: blue;  }
+a:visited { color: red;   }
+a:hover   { color: green; }
+a:active  { color: pink;  }
+
+footer{  /* footer background color */
+  height: 75px;
+  background-color: gray;
+}
+
+footer p{
+  padding: 20px 0 20px 0;
+  color: white;
+  text-align: center;
+}
+
+
+/* Groups and Items -- Mobile First*/
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  align-items: center;
+  margin: 10px;
+}
+
+
+
+/* Groups and Items -- desktop over 800px wide*/
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+}
